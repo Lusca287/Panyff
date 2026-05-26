@@ -8,6 +8,10 @@
 
 }
 
+body{
+    background-color: #301F00;
+}
+
 .componente-invertido{
     transform: scaleX(-1);
 }
@@ -20,14 +24,14 @@ nav{
 
     display: flex;
     justify-content: space-between;
-    padding: 0 3rem 0 3rem;
+    padding: 0 4rem 0 4rem;
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .navbar > img{
@@ -43,7 +47,7 @@ nav{
 .redes{
     display: flex;
     gap: 2rem;
-    margin-top: 1rem;
+    margin-top: 2.3rem;
 }
 
 /* Header Pagina 1 */
@@ -78,6 +82,8 @@ header > h1{
 header > div{
     width: 22rem;
     text-align: center;
+    display: grid;
+    justify-content: center;
 }
 
 header > div > h1{
@@ -86,7 +92,7 @@ header > div > h1{
 }
 
 header > div > p{
-    font-size: 2.90rem;
+    font-size: 3rem;
     color: #FCEED1;
 }
 
@@ -103,8 +109,23 @@ header > div > p > span{
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem 0 7rem;
 }
 
 .rodape > a{
     font-size: 2.5rem;
+    color: #FCEED1;
+    text-decoration: underline;
+}
+
+.header-rodape > span{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-rodape > span > p{
+    color: #FCEED1;
+    font-size: 1.5rem;
 }
