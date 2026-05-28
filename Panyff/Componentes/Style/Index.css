@@ -8,15 +8,18 @@
 
 }
 
-body{
+body {
     background-color: #301F00;
+
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
-.componente-invertido{
+.componente-invertido {
     transform: scaleX(-1);
 }
 
-nav{
+nav {
     width: 100%;
     height: 9.5rem;
     background-color: #301F00;
@@ -27,24 +30,24 @@ nav{
     padding: 0 4rem 0 4rem;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 5rem;
 }
 
-.navbar > img{
+.navbar>img {
     width: 5rem;
     height: 8.438rem;
 }
 
-.navbar > a {
+.navbar>a {
     font-size: 32px;
     color: #FCEED1;
 }
 
-.redes{
+.redes {
     display: flex;
     gap: 2rem;
     margin-top: 2.3rem;
@@ -52,7 +55,7 @@ nav{
 
 /* Header Pagina 1 */
 
-header{
+header {
 
     width: 100%;
     height: 40.125rem;
@@ -70,7 +73,7 @@ header{
     background-position-x: 50%;
 }
 
-header > h1{
+header>h1 {
     width: 18rem;
     height: 24rem;
 
@@ -79,30 +82,30 @@ header > h1{
     line-height: 1.4;
 }
 
-header > div{
+header>div {
     width: 22rem;
     text-align: center;
     display: grid;
     justify-content: center;
 }
 
-header > div > h1{
+header>div>h1 {
     font-size: 8rem;
     color: #FCEED1;
 }
 
-header > div > p{
+header>div>p {
     font-size: 3rem;
     color: #FCEED1;
 }
 
-header > div > p > span{
+header>div>p>span {
     font-size: 3.75rem;
 }
 
 /* Rodape Pagina 1 */
 
-.rodape{
+.rodape {
     width: 100%;
     height: 10rem;
     background-color: #301F00;
@@ -113,19 +116,107 @@ header > div > p > span{
     padding: 0 7rem 0 7rem;
 }
 
-.rodape > a{
+.rodape>a {
     font-size: 2.5rem;
     color: #FCEED1;
     text-decoration: underline;
 }
 
-.header-rodape > span{
+.header-rodape>span {
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
-.header-rodape > span > p{
+.header-rodape>span>p {
     color: #FCEED1;
     font-size: 1.5rem;
+}
+
+/* pagina dois */
+
+.second-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #301F00;
+    display: grid;
+    align-items: center;
+    border-top: 1px solid #FCEED1;
+    ;
+}
+
+.second-page>h1 {
+    display: flex;
+    font-size: 8rem;
+    max-width: 100vw;
+    justify-content: center;
+    color: #FCEED1;
+    text-shadow: 0 0 20px #585144;
+}
+
+.wrapper {
+    display: flex;
+    width: max-content;
+    gap: 2rem;
+    padding: 0 1rem;
+    animation: animate 30s linear infinite;
+}
+
+.wrapper:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.wrapper>img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 0 22px rgb(70, 34, 1), 
+                0 0 44px rgb(0, 0, 0);
+
+
+    position: relative;
+}
+
+.wrapper>img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 22px rgb(95, 61, 28), 
+                0 0 44px rgb(0, 0, 0);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Se você tem 3 blocos iguais, mover -66.6% faz ele 
+           resetar voltando 2 blocos, mantendo a continuidade */
+        transform: translateX(-50%);
+    }
+}
+
+#btn-carrossel {
+    border: 2px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #0A0502;
+    border-radius: 24px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+
+.button-carrossel{
+    max-width: 95vw;
+    display: flex;
+    justify-content: flex-end;
 }
