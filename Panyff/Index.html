@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Componentes/Style/Index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <title>index</title>
 </head>
 
 <body>
@@ -16,14 +19,12 @@
             <img src="Componentes/Images/Navbar-auxiliar.png" alt="Navbar-imagem">
             <a href="#header">Home</a>
             <a href="#Carrossel">Cardápio</a>
-            <a href="">Sobre Nós</a>
-            <a href="">Contato</a>
+            <a href="#footer">Contato</a>
             <img class="componente-invertido" src="Componentes/Images/Navbar-auxiliar.png" alt="Navbar-imagem">
         </div>
         <div class="redes">
             <a href=""><i class="fa-brands fa-youtube fa-xl" style="color: #FCEED1;"></i></a>
             <a href=""><i class="fa-brands fa-instagram fa-xl" style="color: #FCEED1;"></i></a>
-            <a href=""><i class="fa-solid fa-bars fa-xl" style="color: #FCEED1;"></i></a>
         </div>
     </nav>
 
@@ -36,7 +37,7 @@
     </header>
 
     <section class="rodape">
-        <a href="">veja nosso cardápio</a>
+        <a href="cardapio.html">veja nosso cardápio</a>
         <div class="header-rodape">
             <span>
                 <a href=""><i class="fa-brands fa-whatsapp fa-xl" style="color: #FCEED1;"></i></a>
@@ -53,7 +54,7 @@
     <section id="Carrossel" class="second-page">
         <h1><span>Produtos</span></h1>
         <div class="wrapper">
-            <img src="Componentes/Images/Carrossel/photo-1509042239860-f550ce710b93 1.png" alt="Imagem1" />
+            <img src="Componentes/Images/Carrossel/photo-1509042239860-f550ce710b93 1.png" alt="Imagem1 carrossel" />
             <img src="Componentes/Images/Carrossel/photo-1571115177098-24ec42ed204d 1.png" alt="Sukuna" />
             <img src="Componentes/Images/Carrossel/photo-1592148121354-383fe3029e10 1.png" alt="Toji" />
             <img src="Componentes/Images/Carrossel/photo-1606890737304-57a1ca8a5b62 1.png" alt="Maki" />
@@ -67,9 +68,73 @@
 
         </div>
         <span class="button-carrossel">
-            <button id="btn-carrossel"><span><b>Cardapio</b></span></button>
+            <a href="cardapio.html"><button id="btn-carrossel"><span><b>Cardápio</b></span></button></a>
         </span>
     </section>
+
+    <footer id="footer">
+        <section class="bg-footer">
+            <div class="bg-footer-1">
+                <h1>Fale conosco</h1>
+                <span style="display: flex; gap: 0.8rem; align-items: center; margin-bottom: 1.5rem;">
+                    <a href=""><i class="fa-brands fa-whatsapp fa-2xl" style="color: #FCEED1;"></i></a>
+                    <p style="font-size: 2.5rem;">(55+) 11 99999-9999</p>
+                </span>
+                <p>Endereço: Av. Engenheiro Eusébio Stevaux, 823</p>
+                <p>Bairro: Santo Amaro (Região de Jurubatuba)</p>
+                <p>Cidade/Estado: São Paulo - SP</p>
+                <p>CEP: 04696-000</p>
+                <p>Aviso Legal: Projeto Integrador sem fins comerciais.</p>
+            </div>
+            <div class="bg-footer-2">
+                <span style="display: flex; gap: 1rem; align-items: center; margin-bottom: 2rem; width: 23rem;">
+                    <i class="fa-solid fa-location-dot fa-2xl"></i>
+                    <p style="font-size: 1.8rem;">Endereço: Av. Engenheiro Eusébio Stevaux, 823</p>
+                </span>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.182286907228!2d-46.698282999999996!3d-23.6694383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce503994b7c1c5%3A0x1f009f8531d1e5d6!2sAv.%20Eng.%20Eus%C3%A9bio%20Stevaux%2C%20823%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004696-000!5e0!3m2!1spt-BR!2sbr!4v1780331355929!5m2!1spt-BR!2sbr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <section class="footer-contato">
+            <div style="display: flex; gap: 10rem;">
+                <section class="contato-ul">
+                    <h1 style="font-size: 48px; margin-bottom: 1rem;">Contato</h1>
+                    <ul>
+                        <li style="font-size: 24px;">
+                            <a href=""><i class="fa-solid fa-envelope" style="color: #FCEED1;"></i></a>
+                            <p>xxxxx@gmail.com</p>
+                        </li>
+                        <li style="font-size: 24px;">
+                            <a href=""><i class="fa-solid fa-phone" style="color: #FCEED1;"></i></a>
+                            <p>(55+) 11 99999-9999</p>
+                        </li>
+                        <li style="font-size: 24px;">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Endereço: Av. Engenheiro Eusébio Stevaux, 823</p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 style="font-size: 48px; margin-bottom: 1rem;">Menu</h1>
+                    <ul>
+                        <li style="font-size: 24px;">Home</li>
+                        <li style="font-size: 24px;">Sobre</li>
+                        <li style="font-size: 24px;">Cardápio</li>
+                        <li style="font-size: 24px;">Encomenda</li>
+                    </ul>
+                </section>
+            </div>
+            <div style="align-self: flex-start;">
+                <a href=""><i class="fa-brands fa-youtube fa-xl" style="color: #FCEED1;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-xl" style="color: #FCEED1;"></i></a>
+            </div>
+        </section>
+        <p style="justify-self: center; font-size: 2rem;">Este é um site fictício desenvolvido para fins acadêmicos no
+            Centro Universitário Senac.</p>
+    </footer>
 </body>
 
 </html>
