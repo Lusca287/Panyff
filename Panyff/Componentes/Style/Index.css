@@ -48,6 +48,10 @@ li {
     color: #FCEED1;
 }
 
+a {
+    color: #FCEED1;
+}
+
 
 /* navbar */
 
@@ -71,6 +75,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 5rem;
+}
+
+.navbar a:hover{
+    transform: scale(1.2);
 }
 
 .navbar>img {
@@ -233,7 +241,7 @@ header>div>p>span {
 }
 
 #btn-carrossel {
-    border: 2px solid #f3f3f3;
+    filter: drop-shadow(0 0 0 2px #000000);
     background-color: #f3f3f3;
     color: #0A0502;
     border-radius: 24px;
@@ -246,7 +254,37 @@ header>div>p>span {
     font-size: 1.6rem;
     letter-spacing: 1.5px;
     clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
 }
+
+.btn-text {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .btn-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-150%, -50%); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  #btn-carrossel:hover .btn-text {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  
+  #btn-carrossel:hover .btn-icon {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
 
 .button-carrossel {
     max-width: 95vw;
