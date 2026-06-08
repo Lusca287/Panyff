@@ -209,7 +209,7 @@ header>div>p>span {
     cursor: pointer;
 }
 
-.wrapper>img {
+.wrapper>a>img {
     width: 30rem;
     height: 30rem;
     object-fit: cover;
@@ -222,7 +222,7 @@ header>div>p>span {
     position: relative;
 }
 
-.wrapper>img:hover {
+.wrapper>a>img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 22px rgb(95, 61, 28),
         0 0 44px rgb(0, 0, 0);
@@ -234,8 +234,6 @@ header>div>p>span {
     }
 
     100% {
-        /* Se você tem 3 blocos iguais, mover -66.6% faz ele 
-           resetar voltando 2 blocos, mantendo a continuidade */
         transform: translateX(-50%);
     }
 }
